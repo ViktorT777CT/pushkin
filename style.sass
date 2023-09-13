@@ -57,6 +57,7 @@ ul
 .menu
   max-width: 408px
   width: 100%
+  position: relative
   &>ul>li
     width: 408px
     position: relative
@@ -100,12 +101,9 @@ ul
 
 .menu_2
   padding: 30px
-  position: absolute
-  top: 158px
-  left: 425px
   background-color: #fff
   border-radius: 20px
-  display: none
+  display: flex
   & svg
     width: 5px
     height: 10px
@@ -133,12 +131,67 @@ ul.breadcrumb li+li:before
 ul.breadcrumb li a
   color: #343434
   text-decoration: none
-  text-decoration: underline
+  border-bottom: 1px solid #000
 .content_2
   width: 100%
   padding: 0 52px 0 52px
 .book
   display: flex
+  width: 50%
+  margin-top: 34px
+  &_block
+    display: flex
+    flex-wrap: wrap
+  &_info
+    margin-left: 30px
+    & h3
+      margin: 0
+    & p
+      margin: 10px 0 5px 0
+    &-gray
+      color: #8B8B8B
+p .book_info-gray
+  border-bottom: 1px solid #8B8B8B
+  margin-top: 15px
+.read_button
+  background-color: #fff
+  border-radius: 3px
+  padding: 10px
+  margin-top: 15px
+  &-p
+    margin-top: 30px!important
+    margin-bottom: 30px!important
+  & svg
+    padding-left: 10px
+
+.dropbtn:hover, .dropbtn:focus
+  background-color: #2980B9
+
+
+.dropdown
+  position: relative
+  display: inline-block
+  width: 100%
+
+
+.dropdown-content
+  position: absolute
+  background-color: #f1f1f1
+  min-width: 160px
+  top: 0
+  left: 405px
+  overflow: auto
+  z-index: 1
+
+.dropdown-content .menu_2
+  color: black
+  padding: 12px 16px
+  text-decoration: none
+  display: flex
+.show
+  display: flex
+.hidden:not(.show)
+    display: none
 
 
 

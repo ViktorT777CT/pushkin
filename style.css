@@ -80,6 +80,7 @@ ul {
 .menu {
   max-width: 408px;
   width: 100%;
+  position: relative;
 }
 .menu > ul > li {
   width: 408px;
@@ -135,12 +136,9 @@ ul {
 
 .menu_2 {
   padding: 30px;
-  position: absolute;
-  top: 158px;
-  left: 425px;
   background-color: #fff;
   border-radius: 20px;
-  display: none;
+  display: flex;
 }
 .menu_2 svg {
   width: 5px;
@@ -182,7 +180,7 @@ ul.breadcrumb li + li:before {
 ul.breadcrumb li a {
   color: #343434;
   text-decoration: none;
-  text-decoration: underline;
+  border-bottom: 1px solid #000;
 }
 
 .content_2 {
@@ -192,6 +190,78 @@ ul.breadcrumb li a {
 
 .book {
   display: flex;
+  width: 50%;
+  margin-top: 34px;
+}
+.book_block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.book_info {
+  margin-left: 30px;
+}
+.book_info h3 {
+  margin: 0;
+}
+.book_info p {
+  margin: 10px 0 5px 0;
+}
+.book_info-gray {
+  color: #8B8B8B;
+}
+
+p .book_info-gray {
+  border-bottom: 1px solid #8B8B8B;
+  margin-top: 15px;
+}
+
+.read_button {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 15px;
+}
+.read_button-p {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+.read_button svg {
+  padding-left: 10px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  top: 0;
+  left: 405px;
+  overflow: auto;
+  z-index: 1;
+}
+
+.dropdown-content .menu_2 {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+}
+
+.show {
+  display: flex;
+}
+
+.hidden:not(.show) {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
