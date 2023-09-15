@@ -48,6 +48,7 @@ h1 {
 }
 .header_block button {
   position: absolute;
+  top: 0;
   right: 10px;
   z-index: 5;
   border: none;
@@ -105,7 +106,7 @@ h1 {
 }
 .menu a:hover, .menu a:focus {
   background-color: #fff;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 20px;
 }
 .menu .a_one:focus {
   background-color: #fff;
@@ -267,6 +268,15 @@ p .book_info-gray {
 
 .hidden:not(.show) {
   display: none;
+}
+
+.content_12 p {
+  padding: 10px 5px 5px 10px;
+  margin-bottom: 10px;
+}
+
+.content_12 p:hover {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
