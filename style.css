@@ -3,6 +3,7 @@ body {
   margin: 0;
   background-color: #F3F3F3;
   color: #343434;
+  font-family: Inter;
 }
 
 a {
@@ -17,6 +18,10 @@ li {
 ul {
   margin-left: 0;
   padding-left: 0;
+}
+
+h1 {
+  font-family: "Montserrat", Inter;
 }
 
 .container {
