@@ -163,7 +163,6 @@ h1 {
   display: flex;
 }
 .content_1 {
-  max-width: 630px;
   padding: 0 52px 0 52px;
 }
 
@@ -191,13 +190,15 @@ ul.breadcrumb li a {
 
 .content_2 {
   width: 100%;
-  padding: 0 52px 0 52px;
 }
 
 .book {
   display: flex;
   width: 50%;
   margin-top: 34px;
+}
+.book div img {
+  width: 112px;
 }
 .book_block {
   display: flex;
@@ -270,13 +271,8 @@ p .book_info-gray {
   display: none;
 }
 
-.content_12 p {
-  padding: 10px 5px 5px 10px;
-  margin-bottom: 10px;
-}
-
-.content_12 p:hover {
-  background-color: #fff;
+#blind_panel, #index__ {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
